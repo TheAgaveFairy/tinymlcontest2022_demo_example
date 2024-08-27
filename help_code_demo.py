@@ -90,6 +90,7 @@ def stats_report(mylist):
     ppv = round(PPV(mylist), 5)
     npv = round(NPV(mylist), 5)
 
+    """
     output = str(mylist) + '\n' + \
              "F-1 = " + str(f1) + '\n' + \
              "F-B = " + str(fb) + '\n' + \
@@ -108,6 +109,9 @@ def stats_report(mylist):
     print("ACC = ", ACC(mylist))
     print("PPV = ", PPV(mylist))
     print("NPV = ", NPV(mylist))
+    """
+    output = f"{f1},{fb},{se},{sp},{bac},{acc},{ppv},{npv}" # F-1,F-B,SEN,SPE,BAC,ACC,PPV,NPV\n
+    print(output)
 
     return output
 
@@ -133,16 +137,22 @@ def loadCSV(csvf):
     return dictLabels
 
 
-def txt_to_numpy(filename, row):
+def txt_to_numpy(filename, row, sampleRate = 1.0):
     file = open(filename)
     lines = file.readlines()
-    datamat = np.arange(row, dtype=np.float)
+    #skip = int(len(lines) * sampleRate)
+    datamat = np.zeros(row , dtype=float) #this was arange, trying zeros
+
     row_count = 0
-    for line in lines:
+    for i in range(0, len(lines), int(sampleRate)):
+        line = lines[i]
         line = line.strip().split(' ')
         datamat[row_count] = line[0]
         row_count += 1
+        if row_count == row:
+            break
 
+    #print(len(datamat))
     return datamat
 
 
@@ -156,12 +166,13 @@ class ToTensor(object):
 
 
 class IEGM_DataSET():
-    def __init__(self, root_dir, indice_dir, mode, size, transform=None):
+    def __init__(self, root_dir, indice_dir, mode, size, transform=None, sampleRate = 1.0): #pd - i added the sampling rate parameter
         self.root_dir = root_dir
         self.indice_dir = indice_dir
         self.size = size
         self.names_list = []
         self.transform = transform
+        self.sampleRate = sampleRate
 
         csvdata_all = loadCSV(os.path.join(self.indice_dir, mode + '_indice.csv'))
 
@@ -175,10 +186,10 @@ class IEGM_DataSET():
         text_path = self.root_dir + self.names_list[idx].split(' ')[0]
 
         if not os.path.isfile(text_path):
-            print(text_path + 'does not exist')
+            print(text_path + ' does not exist')
             return None
 
-        IEGM_seg = txt_to_numpy(text_path, self.size).reshape(1, self.size, 1)
+        IEGM_seg = txt_to_numpy(text_path, self.size, self.sampleRate).reshape(1, self.size, 1)
         label = int(self.names_list[idx].split(' ')[1])
         sample = {'IEGM_seg': IEGM_seg, 'label': label}
 

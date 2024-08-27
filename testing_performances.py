@@ -23,19 +23,23 @@ def main():
     path_records = args.path_record
     path_net = args.path_net
     path_indices = args.path_indices
+    sampleRate = args.sample_rate#
     stats_file = open(path_records + 'seg_stat.txt', 'w')
 
     # load trained network
-    net = torch.load(path_net + 'IEGM_net.pkl', map_location='cuda:0')
+    net = torch.load(path_net + 'IEGM_net.pkl', map_location='cpu') #cuda:0 #pd had to force cpu here
     net.eval()
-    net.cuda()
-    device = torch.device('cuda:0')
-
+    
+    #net.cuda()
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    net.to(device)# added this here and commented out the cuda() call
+    #print(device)
     testset = IEGM_DataSET(root_dir=path_data,
                            indice_dir=path_indices,
                            mode='test',
                            size=SIZE,
-                           transform=transforms.Compose([ToTensor()]))
+                           transform=transforms.Compose([ToTensor()]),
+                           sampleRate=sampleRate)
 
     testloader = DataLoader(testset, batch_size=BATCH_SIZE_TEST, shuffle=True, num_workers=0)
 
@@ -65,6 +69,7 @@ def main():
     stats_file.write('segments: TP, FN, FP, TN\n')
     output_segs = stats_report([segs_TP, segs_FN, segs_FP, segs_TN])
     stats_file.write(output_segs + '\n')
+    #stats_file.write(str(sampleRate) + '\n')#
 
     del net
 
@@ -73,15 +78,16 @@ if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--cuda', type=int, default=0)
     argparser.add_argument('--size', type=int, default=1250)
-    argparser.add_argument('--path_data', type=str, default='H:/Date_Experiment/data_IEGMdb_ICCAD_Contest/segments-R250'
-                                                            '-BPF15_55-Noise/tinyml_contest_data_training/')
+    argparser.add_argument('--path_data', type=str, default='C:/Users/jodge/Documents/School/Summer24/tinyml_contest_data_training/')
     argparser.add_argument('--path_net', type=str, default='./saved_models/')
     argparser.add_argument('--path_record', type=str, default='./records/')
     argparser.add_argument('--path_indices', type=str, default='./data_indices/')
+    argparser.add_argument('--sample_rate', type=float, help="haven't decided yet", default = 1.0)#
 
     args = argparser.parse_args()
 
-    device = torch.device("cuda:" + str(args.cuda))
-    print("device is --------------", device)
+    device = torch.device("cuda:" + str(args.cuda) if torch.cuda.is_available() else 'cpu')
+    #print("device is --------------", device)
+    #print("sampleRate is : ", args.sample_rate)#
 
     main()

@@ -1,0 +1,14 @@
+device is -------------- cpu
+sampleRate is :  3.0
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.66592 Train loss: 0.60832
+Test Acc: 0.84249 Test Loss: 0.43130
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.76487 Train loss: 0.48612
+Test Acc: 0.87342 Test Loss: 0.32179
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training

@@ -1,0 +1,4 @@
+device is -------------- cpu
+sampleRate is :  1.0
+Training Dataset loading finish.
+Start training

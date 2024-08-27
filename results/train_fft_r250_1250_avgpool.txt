@@ -1,0 +1,110 @@
+Training Dataset loading finish.
+Start training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.67279 Train loss: 0.59852
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT41-AFb-26.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT76-SR-45.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT68-SR-71.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT18-SR-169.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT51-VT-166.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT51-VT-186.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT21-VT-253.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT48-VT-666.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT48-VT-156.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT18-SR-571.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT18-VT-222.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT02-SR-125.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT68-SR-314.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT76-VT-531.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT76-SR-65.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT18-SR-547.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT51-VT-145.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT27-SVT-214.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT21-VT-153.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT68-SR-311.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT12-VT-154.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT51-SR-15.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT02-VFb-152.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT48-SR-107.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT02-VFb-256.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT70-VT-218.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT82-SR-63.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT51-VT-165.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT19-SR-84.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT12-SR-28.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT82-SR-235.txtdoes not exist
+C:\Users\jodge\Documents\School\Summer24\fft_data\FT12-VT-195.txtdoes not exist
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65438 Train loss: 0.62179
+Test Acc: 0.79307 Test Loss: 0.50443
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.70266 Train loss: 0.56644
+Test Acc: 0.81013 Test Loss: 0.47244
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.64959 Train loss: 0.62199
+Test Acc: 0.81156 Test Loss: 0.49161
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.71704 Train loss: 0.54929
+Test Acc: 0.82613 Test Loss: 0.43099
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.64991 Train loss: 0.61654
+Test Acc: 0.78258 Test Loss: 0.50328
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.70725 Train loss: 0.56142
+Test Acc: 0.81867 Test Loss: 0.46181
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65523 Train loss: 0.61150
+Test Acc: 0.77867 Test Loss: 0.51187
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.71521 Train loss: 0.55115
+Test Acc: 0.81600 Test Loss: 0.44770
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65280 Train loss: 0.62172
+Test Acc: 0.79360 Test Loss: 0.48008
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.74992 Train loss: 0.51826
+Test Acc: 0.86240 Test Loss: 0.38165
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.63882 Train loss: 0.63637
+Test Acc: 0.80604 Test Loss: 0.53289
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.69681 Train loss: 0.57538
+Test Acc: 0.81298 Test Loss: 0.47759
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training

@@ -1,0 +1,14 @@
+training:
+make the saved_models folder
+
+force device to cpu
+
+change data path (line 140 or so)
+
+test:
+make the records folder
+
+force cpu (line 29) instead of cuda:0
+and line 32 and 83 or so
+
+change the data path (__main__)

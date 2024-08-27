@@ -1,0 +1,64 @@
+Training Dataset loading finish.
+Start training
+Training Dataset loading finish.
+Start training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.66633 Train loss: 0.60027
+Test Acc: 0.86453 Test Loss: 0.42899
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.78479 Train loss: 0.45610
+Test Acc: 0.85120 Test Loss: 0.33854
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.66377 Train loss: 0.59474
+Test Acc: 0.85369 Test Loss: 0.42155
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.79251 Train loss: 0.43901
+Test Acc: 0.88124 Test Loss: 0.27524
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.68019 Train loss: 0.58797
+Test Acc: 0.86560 Test Loss: 0.42298
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.83753 Train loss: 0.37636
+Test Acc: 0.94613 Test Loss: 0.17916
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.67775 Train loss: 0.59008
+Test Acc: 0.87573 Test Loss: 0.38145
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.83217 Train loss: 0.37379
+Test Acc: 0.91556 Test Loss: 0.20912
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.68917 Train loss: 0.58398
+Test Acc: 0.87467 Test Loss: 0.39268
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.82713 Train loss: 0.39884
+Test Acc: 0.91147 Test Loss: 0.25092
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training

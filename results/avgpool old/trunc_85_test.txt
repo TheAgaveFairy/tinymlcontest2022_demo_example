@@ -1,0 +1,2 @@
+device is -------------- cpu
+sampleRate is :  1.0

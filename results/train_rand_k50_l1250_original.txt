@@ -1,0 +1,60 @@
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.68864 Train loss: 0.57705
+Test Acc: 0.83342 Test Loss: 0.42582
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.74955 Train loss: 0.50466
+Test Acc: 0.87751 Test Loss: 0.33215
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.67173 Train loss: 0.59635
+Test Acc: 0.83698 Test Loss: 0.44100
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.74195 Train loss: 0.51320
+Test Acc: 0.87164 Test Loss: 0.34814
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65690 Train loss: 0.60635
+Test Acc: 0.77547 Test Loss: 0.49531
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.67141 Train loss: 0.57678
+Test Acc: 0.79769 Test Loss: 0.47877
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.68652 Train loss: 0.57801
+Test Acc: 0.86827 Test Loss: 0.40380
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.78889 Train loss: 0.45830
+Test Acc: 0.89920 Test Loss: 0.26173
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.67519 Train loss: 0.59691
+Test Acc: 0.81529 Test Loss: 0.46137
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.71265 Train loss: 0.54551
+Test Acc: 0.84427 Test Loss: 0.43211
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training

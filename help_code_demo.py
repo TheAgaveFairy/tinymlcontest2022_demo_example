@@ -137,11 +137,10 @@ def loadCSV(csvf):
     return dictLabels
 
 
-def txt_to_numpy(filename, row, sampleRate = 1.0):
+def txt_to_numpy(filename, size, sampleRate = 1.0):
     file = open(filename)
     lines = file.readlines()
-    #skip = int(len(lines) * sampleRate)
-    datamat = np.zeros(row , dtype=float) #this was arange, trying zeros
+    datamat = np.zeros(size, dtype=float) #this was arange, trying zeros
 
     row_count = 0
     for i in range(0, len(lines), int(sampleRate)):
@@ -149,10 +148,9 @@ def txt_to_numpy(filename, row, sampleRate = 1.0):
         line = line.strip().split(' ')
         datamat[row_count] = line[0]
         row_count += 1
-        if row_count == row:
+        if row_count == size:
             break
 
-    #print(len(datamat))
     return datamat
 
 

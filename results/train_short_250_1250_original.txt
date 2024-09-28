@@ -58,3 +58,63 @@ saving model IEGM_net.pkl
 saved model IEGM_net and state_dict.pkl
 wrote to ./saved_models/loss_acc.txt
 Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.63707 Train loss: 0.62356
+Test Acc: 0.81707 Test Loss: 0.46173
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.73659 Train loss: 0.52833
+Test Acc: 0.84498 Test Loss: 0.39415
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65800 Train loss: 0.61471
+Test Acc: 0.78382 Test Loss: 0.49867
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.71940 Train loss: 0.54412
+Test Acc: 0.83182 Test Loss: 0.41982
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65499 Train loss: 0.61543
+Test Acc: 0.79822 Test Loss: 0.49395
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.71339 Train loss: 0.55705
+Test Acc: 0.85031 Test Loss: 0.41679
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.63370 Train loss: 0.64223
+Test Acc: 0.79022 Test Loss: 0.50438
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.71769 Train loss: 0.54978
+Test Acc: 0.86027 Test Loss: 0.36908
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training
+Training Dataset loading finish.
+Start training
+[Epoch, Batches] is [1,   769] 
+Train Acc: 0.65162 Train loss: 0.61009
+Test Acc: 0.83573 Test Loss: 0.44786
+[Epoch, Batches] is [2,   769] 
+Train Acc: 0.73793 Train loss: 0.52558
+Test Acc: 0.87876 Test Loss: 0.34869
+saving model IEGM_net.pkl
+saved model IEGM_net and state_dict.pkl
+wrote to ./saved_models/loss_acc.txt
+Finish training

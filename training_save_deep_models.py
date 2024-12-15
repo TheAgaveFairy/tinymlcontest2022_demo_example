@@ -5,7 +5,8 @@ from torch.utils.data import DataLoader
 import torch.nn as nn
 import torch.optim as optim
 from help_code_demo import ToTensor, IEGM_DataSET
-from models.model_1 import IEGMNet
+from models.model_1 import IEGMNet #CNNRNNHybridIEGMNet
+from sklearn.metrics import accuracy_score, classification_report
 
 
 def main():
@@ -20,7 +21,7 @@ def main():
     sampleRate = args.sample_rate#
 
     # Instantiating NN
-    net = IEGMNet()
+    net = IEGMNet() #CNNRNNHybridIEGMNet()
     net.train()
     net = net.float().to(device)
 
@@ -61,6 +62,8 @@ def main():
         correct = 0.0
         accuracy = 0.0
         i = 0
+        guesses = []
+        actuals = []
         for j, data in enumerate(trainloader, 0):
             inputs, labels = data['IEGM_seg'], data['label']
             inputs = inputs.float().to(device)
@@ -80,8 +83,21 @@ def main():
             running_loss += loss.item()
             i += 1
 
+            #guesses.append(predicted_test[0])
+            #actuals.append(seg_label[0])
+            actuals.extend(labels.detach().cpu().numpy())
+            guesses.extend(predicted.detach().cpu().numpy())
+
         print('[Epoch, Batches] is [%d, %5d] \nTrain Acc: %.5f Train loss: %.5f' %
               (epoch + 1, i, accuracy / i, running_loss / i), flush=True)
+
+        print("AHHHHHHHHHHHHHHHHHH WHAT IS THIS:", labels)
+
+        accuracyScore = accuracy_score(actuals, guesses, normalize=True)
+        print('Accuracy Score:', accuracyScore)
+        #classReport = classification_report(actuals,guesses,labels=list(range(8)),target_names=['AFb','AFt','SR','SVT','VFb','VFt','VPD','VT'])
+        classReport = classification_report(actuals,guesses,labels=list(range(2)),target_names=['Healthy','Dangerous'])
+        print('Classification Report:\n',classReport)
 
         Train_loss.append(running_loss / i)
         Train_acc.append((accuracy / i).item())
@@ -151,7 +167,7 @@ if __name__ == '__main__':
 
     args = argparser.parse_args()
 
-    device = torch.device("cuda:" + str(args.cuda) if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda: " + str(args.cuda) if torch.cuda.is_available() else "cpu")
 
     #print("device is --------------", device)
     #print("sampleRate is : ", args.sample_rate)
